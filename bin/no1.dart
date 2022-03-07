@@ -11,6 +11,9 @@ void main(List<String> arguments) {
   int co = 1;
 
   for (var i = 0; i < input; i++) {
+    if (co > 9) {
+      co = 1;
+    }
     for (var j = 0; j < stars; j++) {
       stdout.write("*");
     }
